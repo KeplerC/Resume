@@ -46,6 +46,8 @@
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{0pt}}
+    
+    
   }
 }
 
@@ -118,11 +120,11 @@
       {Software Engineer Intern}{Nov 2017 - Present}
       \resumeItemListStart
         \resumeItem{Site Enforcement Recorder Management}
-          {Designed and built software for workstations to manage police site enforcement recorders. This project will be certified by Ministry of Public Security and applied to all site enforcement recorders in my city.  }
+          {Designed and built software for workstations to manage police site enforcement recorders. This project will be certified by Ministry of Public Security of China and applied to all site enforcement recorders in my city.  }
         \resumeItemListStart
           \resumeSubItem{SDK checking tool}{As different police site enforcement recorders have different SDKs, I wrote python scripts to check if their interfaces are valid and recorders are functioning. }
-          \resumeSubItem{Data Collection}{Designed and implemented a unified interface to initialize, setup, backup, modify all site enforcement recorders. Workstations were designed to plug in one hundred recorders.}
-          \resumeSubItem{Coordination with centralized database}{Sending and responding requests by http/ftp with centralized storage servers.}
+          \resumeSubItem{Recorder Management}{Designed and implemented in python a unified interface to initialize, setup, backup, modify all site enforcement recorders. Workstations were designed to plug in one hundred recorders.}
+          \resumeSubItem{Coordination with centralized database}{Sending and responding requests by http/ftp with central storage servers.}
         \resumeItemListEnd
         \resumeItem{Technologies Used}{Python, Windows Programming, Port Multiplexing, MySQL, QT in C++}
       \resumeItemListEnd
@@ -133,7 +135,7 @@
       \resumeItemListStart
         \resumeItem{Novelty detection}
           {Did research and wrote paper on novelty detection on time-series data. As high-dimensional time-series data usually comes with long training time and difficulty in real-time implementations, we built a dynamic Bayesian machine by Expectation-Maximization algorithm. }
-         \resumeItem{Time-series Correlation and Clustering}{Did research and wrote paper on correlation between different dimensions of time-series and associated p-value. Used agglomerating tree to cluster time-series data. }
+         \resumeItem{Time-series Correlation and Clustering}{Did research and wrote paper on correlation between different dimensions of time-series and associated p-value, then used agglomerating tree to cluster similar time-series data. }
         \resumeItem{Paper Review}{Wrote paper reviews for other researchers in research group, which later helped organizing the paper that we wrote. I keep doing paper reviews even after I left Siemens, which are all on \href{http://kychen.xyz/}{http://kychen.xyz/} }
         \resumeSubItem{Technologies Used}{Python, Numpy, Pandas, Tensorflow, Matlab, Jupyter-notebook, Latex}
       \resumeItemListEnd
@@ -146,45 +148,46 @@ TODO: Patent, Paper
 %TODO: official word for scrapy
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubheadingdouble{LSTMxWave}{Winter 2017}\vspace{-3pt}
-      \resumeItemListStart
-          LSTMxWave is a machine learning project that explores the usage of LSTM/RNN to process time-series data such as sound waves. 
+    \resumeSubheadingdouble{LSTMxWave}{Winter 2017}
+
+    {LSTMxWave is a machine learning project that explores the usage of LSTM/RNN to process time-series data such as sound waves. }\vspace{-3pt}
+    \resumeItemListStart
           \resumeItem{Autoencoder}{By constructing encoder and decoder LSTM layers, I built an autoencoder to find a better compression mechanism.}
           \resumeItem{Prediction}{Built a discriminative model by multi-layered LSTMs to predict waves.}
           \resumeItem{Novelty detection}{Detecting novelty points by measuring reconstruction error.}
           \resumeItem{Technologies Used}{Tensorflow, Numpy, Jupyter-notebook}
       \resumeItemListEnd
 
-      \resumeSubheadingdouble{ClassUCLA}{Winter 2017}\vspace{-3pt}
+      \resumeSubheadingdouble{ClassUCLA}{Winter 2017}
+
+      {ClassUCLA runs on a server to automatically check for open seats of classes in UCLA. It notifies users by email or wechat once the class is available or user's requirement is satisfied. }\vspace{-3pt}
       \resumeItemListStart
-        ClassUCLA runs on a server to automatically check for open seats of classes in UCLA. It notifies users by email or wechat when the class is available or users' requirement is satisfied. 
-        \resumeItem{Scrap web data}{Using beautiful soap to scrap class information on school's website} 
+        \resumeItem{Scrap web data}{Using beautiful soap to scrap class information on school's website}
         \resumeItem{Server/Database management}{Designed a scalable database to add/modify/delete users' data, like classes, contact information and etc. }
-        \resumeItem{Anti-timeout}{The whole system is now built on school's linux server, which has 6-hour timeout for all programs. I designed a way to bypass this limit.}
+        \resumeItem{Anti-timeout}{The whole system is now built on school's linux server, which has 6-hour timeout for all programs. I designed a way to bypass this limit and make whole system reentrant.}
         \resumeItem{Active Users}{130+}
       \resumeItemListEnd
-      \resumeSubheadingdouble{Flappy bird in 3D}{Spring 2017}\vspace{-3pt}
+      \resumeSubheadingdouble{Flappy bird in 3D}{Spring 2017}
+
+      {I reconstructed Flappy bird by WebGL in 3D. This project involves modelling 3D objects, collision detection, rendering and texuture, animation and etc.}\vspace{-3pt}
       \resumeItemListStart
-        I reconstructed Flappy bird by WebGL in 3D. This project involves modelling 3D objects, collision detection, rendering and texuture, animation and etc. 
         \resumeItem{Technologies Used}{WebGL, Javascript, HTML}
       \resumeItemListEnd
-      \resumeSubheadingdouble{All-in or not All-in}{Summer 2017}\vspace{-3pt}
+
+      \resumeSubheadingdouble{All-In or Not}{Summer 2017}
+
+      This project predicts if Texas Hold'em players should call given two cards before the flop. Based on permutation of 100,000 hands, I selected and regularized certain features
+      and trained a logistic regression on tensorflow. I also explored tensorflow's features like Tensorboard and GPU acceleration. \\
       \resumeItemListStart
-        
-        \resumeItem{}
-          {Built software for local workstations to manage all police site enforcement recorders of the whole city. }
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 \section{Honors and Awards}
-  \resumeSubHeadingListStart
-    \resumeSubItem{First Presenter of Trilateral Leadership Summit}
-      {Presented a bright and practical future to youth from China, South Korea and Japan. }\vspace{-4pt}
-    \resumeSubItem{Highest Distinction}
-      {International Euclid Mathematics Contest}\vspace{-4pt}
-    \resumeSubItem{Bronze Medal}
-      {"Cup of Hope" National Mathematics Invitational Tournament}\vspace{-4pt}
-  \resumeSubHeadingListEnd
+    First Presenter of Trilateral Leadership Summit\\
+
+    Highest Distinction of International Euclid Mathematics Contest\\
+
+    Bronze Medal of "Cup of Hope" National Mathematics Invitational Tournament\\
 
 %-------------------------------------------
 \end{document}
