@@ -45,7 +45,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2 \vspace{0pt}}
   }
 }
 
@@ -54,6 +54,14 @@
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubheadingdouble}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -66,14 +74,14 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,6 +93,7 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{http://kychen.xyz/}{\Large Kaiyuan Chen}} & Email : \href{mailto:chenkaiyuan@ucla.edu}{chenkaiyuan@ucla.edu}\\
   \href{http://kychen.xyz/}{http://kychen.xyz/} & Mobile : +1 (424)535-6503 \\
+%  & Github: \href{https://github.com/KeplerC}{https://github.com/KeplerC}
 \end{tabular*}
 
 
@@ -111,10 +120,12 @@
       \resumeItemListStart
         \resumeItem{Site Enforcement Recorder Management}
           {Built software for local workstations to manage all police site enforcement recorders of the whole city. }
-          \resumeSubItem{SDK checking tool}{As different police site enforcement recorders have different SDKs, I wrote python scripts to check if their interfaces are valid and recorders are functioning. }
-        \resumeSubItem{Data Collection}{Designed and implemented a unified interface to initialize, setup, backup, modify all site enforcement recorders. Workstations were designed to plug in one hundred recorders.}
-        \resumeSubItem{Coordination with centralized database}{Sending and responding requests by http/ftp with centralized storage servers}
-        \resumeSubItem{Technologies used}{Python, Windows Programming, Port Multiplexing, MySQL, QT in C++}
+        \resumeItemListStart
+          \resumeSubItem{SDK checking tool}{As different police site enforcement recorders have different SDKs, I wrote python scripts to check if their interfaces are valid and recorders are functioning. \\}
+          \resumeSubItem{Data Collection}{Designed and implemented a unified interface to initialize, setup, backup, modify all site enforcement recorders. Workstations were designed to plug in one hundred recorders.\\}
+          \resumeSubItem{Coordination with centralized database}{Sending and responding requests by http/ftp with centralized storage servers. \\}
+        \resumeItemListEnd
+        \resumeItem{Technologies Used}{Python, Windows Programming, Port Multiplexing, MySQL, QT in C++}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -122,28 +133,10 @@
       {Research Assistant Intern}{May 2017 - Sept 2017}
       \resumeItemListStart
         \resumeItem{Novelty detection}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeI
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
-      \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
-      \resumeItemListStart
-        \resumeItem{Research Assistant - Machine Learning}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
-        \resumeItem{Teaching Assistant - Computational Investing}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+          {Did research and wrote paper on novelty detection on time-series data. As high-dimensional time-series data usually comes with long training time and difficulty in real-time implementations, we built a dynamic Bayesian machine by Expectation-Maximization algorithm. }
+         \resumeItem{Time-series Correlation and Clustering}{Did research and wrote paper on correlation between different dimensions of time-series and associated p-value. Used agglomerating tree to cluster time-series data. }
+        \resumeItem{Paper Review}{Wrote Paper reviews for other researchers in research group, which later helped organizing the paper that we wrote. I keep doing paper reviews even after I left Siemens, which are all on \href{http://kychen.xyz/}{http://kychen.xyz/} }
+        \resumeSubItem{Technologies Used}{Python, Numpy, Pandas, Tensorflow, Matlab, Jupyter-notebook, Latex}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -152,15 +145,30 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Github Visualization}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+    \resumeItem{LSTMxWave}
+      {}
+     \resumeItem{Class-UCLA}
+      {}
+      \resumeItem{All-in or Not}
+      {}
+      \resumeItem{Flappy bird in 3D}
+      {}
   \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheadingdouble
+      {LSTMxWave}{Winter 2017}
+      \resumeItemListStart
+        \resumeItem{}
+          {Built software for local workstations to manage all police site enforcement recorders of the whole city. }
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
 
 %
 %--------PROGRAMMING SKILLS------------
