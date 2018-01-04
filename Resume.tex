@@ -1,8 +1,3 @@
-%-------------------------
-% Resume in Latex
-% Author : Sourabh Bajaj
-% License : MIT
-%------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -15,7 +10,50 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+\usepackage[maxbibnames=99]{biblatex}
+%\usepackage{biblatex}
+\usepackage{filecontents}
 
+\begin{filecontents*}{database.bib}
+
+  @inproceedings{DB,
+  author        = "Wenchao Wu and Yixian Zheng and Kaiyuan Chen and Xiangyu Wang and Nan Cao",
+  AUTHOR+an = {3=highlight},
+  title         = "A Visual Analytics Approach for Equipment Condition Monitoring in Smart Factories of Process Industry",
+  booktitle     = "IEEE PacificVis Conference",
+  address       = "Kobe, Japan",
+  month         =  "4",
+  year          = "2018",
+}
+
+@patent{Video,
+  author        = "Kaiyuan Chen and Benqiang Wang",
+  AUTHOR+an = {1=highlight},
+  assignee      = "Qingdao Haibo Technology Inc",
+  title         = "High-resolution Omnipotent Video Codec",
+  nationality   = "China",
+  number        = "ZL 2015 2 0197947.6",
+  dayfiled      = "3",
+  monthfiled    = April,
+  yearfiled     = "2015",
+  day           = "01",
+  month         = jul,
+  year          = "2015"
+}
+
+\end{filecontents*}
+
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifitemannotation{highlight}
+    {\textbf{#1}}
+    {#1}}
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifitemannotation{highlight}
+    {\textbf{#1}}
+    {#1}}
+
+\bibliography{database.bib}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -46,8 +84,6 @@
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{0pt}}
-    
-    
   }
 }
 
@@ -142,8 +178,10 @@
 
   \resumeSubHeadingListEnd
 
-\section{Published Work}
-TODO: Patent, Paper
+\section{Published Works}
+\nocite{*}
+\printbibliography[heading=none]
+
 %-----------PROJECTS-----------------
 %TODO: official word for scrapy
 \section{Projects}
