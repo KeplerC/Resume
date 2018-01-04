@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2018.1.2)  3 JAN 2018 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2018.1.2)  3 JAN 2018 18:09
 entering extended mode
 **C:/Users/KeplerC/Desktop/Resume2/Resume.tex
 (C:/Users/KeplerC/Desktop/Resume2/Resume.tex
@@ -292,32 +292,32 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/CTEX/UserData/pdftex/config/pdftex.map{UGBK.sfd}{Unicode.sfd}}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  (Resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `Resume.out' has not changed.
-(rerunfilecheck)             Checksum: 3AC702932B2F1706460DDFE65D4C1994;181.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
+(rerunfilecheck)             Checksum: 0D3F4A2801887277BDA95E2D3C6EE342;135.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 5509 strings out of 495237
- 81258 string characters out of 3182728
+ 5507 strings out of 495237
+ 81238 string characters out of 3182728
  171170 words of memory out of 3000000
- 8753 multiletter control sequences out of 15000+200000
+ 8752 multiletter control sequences out of 15000+200000
  9232 words of font info for 36 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,11n,43p,340b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,11n,43p,340b,521s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/CTEX/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmcsc10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
 /CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb>
-Output written on Resume.pdf (2 pages, 95338 bytes).
+Output written on Resume.pdf (2 pages, 94823 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
